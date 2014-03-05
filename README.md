@@ -12,7 +12,7 @@ This is an attempt to setup [d3.js](http://d3js.org/) with [Ember App Kit](http:
 This particular method is generating paths with `d3` and binding it to the `svg` using `Ember`. This will result in paths responding to data changes in the app.
 The example **does not** use `d3` to render the `svg`, instead it is *using `d3` API to calculate the path* and use it in svg.
 
-The whole project was started after reading an [article](http://corner.squareup.com/2012/04/building-analytics.html) by Allen.
+*__courtsey__ : The whole project was started after reading an [article](http://corner.squareup.com/2012/04/building-analytics.html) by [Allen Cheung](http://twitter.com/allenmhc).*
 
 ### The Approach used
 
