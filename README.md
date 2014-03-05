@@ -13,3 +13,22 @@ The example doesnt use d3 to render the svg, instead it is using d3 API to calcu
 
 The whole project was started after reading some related article from Square on the same subject.
 
+## To install Ember App Kit
+
+Please check the Ember App Kit gt page to get details on how to install Ember App Kit :)
+
+## Add d3 to Ember App Kit managed using bower
+
+To include d3 in bower, you can use
+    
+    bower install d3
+    
+Then you can go the `index.html` and add the new vendor file there mimicking jQuery.
+
+## Setup jsHint for esnext or es6
+
+It is recommended that you configure your jsHint with `esnext` option as the project is using next version of ECMA Specification (es6)
+ou can probaby change it in the `.jshintrc` file, I am not an expert with these though.
+
+
+
