@@ -1,9 +1,14 @@
 <svg height="568" width="1024">
     <g transform="translate(0,0)">
         <image width="1024" height="568" xlink:href="assets/img/map.png" class="map"></image>
-        <circle cy="300" cx="725" r="4" class="control"/>
-        <circle cy="150" cx="500" r="4" class="control"/>
-        <circle cy="252" cx="252" r="4" class="control"/>
+        {{#each countries}}
+            {{translation}}
+            <g class="country-marker" {{bind-attr transform=translation}}>
+                <title>{{camel-case country}}</title>
+                <circle cx="0" cy="0" r="4" class="control"/>
+                <text dy="1.5em" style="text-anchor: middle;">{{camel-case country}}</text>
+            </g>
+        {{/each}}
     </g>
 </svg>
 {{#each activeGroups}}

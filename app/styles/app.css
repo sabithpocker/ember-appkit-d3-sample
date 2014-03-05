@@ -65,6 +65,12 @@ svg.migration{
         border-left: 1px solid #000;
         box-sizing: border-box;
     }
+    text {
+        font-family: arial;
+        font-size: 12px;
+        fill: #0D577A;
+        font-weight: bold;
+    }
 	.handle{
 		background-color: #BC0000;
 		border: 3px solid #CCCCCC;

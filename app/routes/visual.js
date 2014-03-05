@@ -24,43 +24,13 @@ export default Ember.Route.extend({
     },
     setupController: function(controller, model) {
 
-        this.controllerFor('countries').set('model',[{
-                country : 'india',
-                position : {
-                    x : 725,
-                    y : 300
-                }
-            }, {
-                country : 'china',
-                position : {
-                    x : 785,
-                    y : 233
-                }
-            }, {
-                country : 'japan',
-                position : {
-                    x : 872,
-                    y : 237
-                }
-            }, {
-                country : 'italy',
-                position : {
-                    x : 542,
-                    y : 196
-                }
-            }, {
-                country : 'germany',
-                position : {
-                    x : 540,
-                    y : 168
-                }
-            }, {
-                country : 'usa',
-                position : {
-                    x : 260,
-                    y : 250
-                }
-            }
+        this.controllerFor('countries').set('model',[
+            {country :'india' , position: {x : 725, y: 300} ,translation: "translate(725,300)"},
+            {country :'china' , position : {x: 785, y: 233} ,translation: "translate(785,233)"},
+            {country :'japan' , position : {x: 872, y: 237} ,translation: "translate(872,237)"},
+            {country :'italy' , position : {x: 542, y: 196} ,translation: "translate(542,196)"},
+            {country :'germany' , position : {x: 540, y: 168} ,translation: "translate(540,168)"},
+            {country :'usa' , position : {x: 260, y: 250} ,translation: "translate(260,250)"}
         ]);
         
         this.controllerFor('migrations').set('model', [{
