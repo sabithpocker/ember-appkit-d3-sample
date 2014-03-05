@@ -1,0 +1,12 @@
+<svg height="568" width="1024">
+    <g transform="translate(0,0)">
+        <image width="1024" height="568" xlink:href="assets/img/map.png" class="map"></image>
+        <circle cy="300" cx="725" r="4" class="control"/>
+        <circle cy="150" cx="500" r="4" class="control"/>
+        <circle cy="252" cx="252" r="4" class="control"/>
+    </g>
+</svg>
+{{#each activeGroups}}
+    {{migration-path currentYear=controller.currentYear countries=controller.countries group=this timeline=controller.timeline}}
+{{/each}}
+{{year-slider currentYear=controller.currentYear timeline=controller.timeline}}

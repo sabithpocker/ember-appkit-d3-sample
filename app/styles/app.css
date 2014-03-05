@@ -1,0 +1,69 @@
+/* Put your CSS here */
+html, body {
+    margin: 20px;
+}
+
+@keyframes domChanged { from { background: yellow; } }
+@-webkit-keyframes domChanged { from { background: yellow; } }
+.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
+
+body{
+	background-color:#9faaa4;
+	}
+#migrationApp{
+	width:1024px;
+	height:768px;
+	margin:0 auto;
+	position:relative;
+	background:transparent url(../images/migration_bg.png) no-repeat left top;
+	}
+article.migration{
+width : 100px;
+display:inline-block;
+margin:5px;
+border:1px solid #dddddd;
+background-color:#eee;
+padding:5px;
+}
+div#timeline{
+	position:fixed;
+	bottom:0;
+	border:1px solid #ddd;
+	padding:4px;
+	background-color:#eee;
+	margin:0 auto;
+	}
+svg.migration{
+	position:absolute;
+	top:0;
+	left:0;
+	}
+#timeline_slider{
+	border: 1px dashed #EEEEEE;
+    bottom: 0;
+    height: 50px;
+    left: 50%;
+    margin-left: -200px;
+    position: fixed;
+    width: 400px;
+    z-index: 999;
+	}
+	.rail{
+		width:100%;
+		height:4px;
+		background-color:#666;
+		border:1px solid #ccc;
+		position:absolute;
+		top:50%;
+		}
+	.handle{
+		background-color: #BC0000;
+		border: 3px solid #CCCCCC;
+		border-radius: 76px 76px 76px 76px;
+		box-shadow: 0 0 2px #444444;
+		height: 10px;
+		left: 0;
+		position: absolute;
+		top: -6px;
+		width: 1px;
+		}

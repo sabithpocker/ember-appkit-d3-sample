@@ -1,0 +1,7 @@
+year in migration path : {{currentYear}} and {{timeline.startYear}} yearspssed {{yearsPassed}}</br>
+<svg class="migration" height="568" width="1024">
+    <g transform="translate(0,0)">
+        {{countryMarkers}}
+        <path {{bind-attr style=bezierStyle  d=bezierPath}} class="curve" />
+    </g>
+</svg>
