@@ -45,6 +45,20 @@ Here the `d` attribute of path is bound to the ember computed variable `bezierPa
     
 This property changes as the `currentYear` changes, resulting in the path changing by itself.
 
+### Installing
+
+- Install [NodeJS](http://nodejs.org)
+- Install [Grunt|]()http://gruntjs.com): `npm install -g grunt-cli`
+- Clone repo
+- In repo
+  - Install local Node packages: `npm install`
+  - Not needed: Install JavaScript packages: `bower install`
+  - Run server: `grunt server`
+  - Visiit `localhost:8000`
+
+
+----
+
 ### Setting up Tips
 
 **To install Ember App Kit** 
