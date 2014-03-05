@@ -12,7 +12,6 @@ export default Ember.Component.extend({
         var max = index * 360 / noOfCountries + 360 / noOfCountries;
         var yearOffset = this.get('yearsPassed') + 2;
         var style = "";
-        style += 'fill:none;stroke-width:1px;shape-rendering:auto;';
         style += 'stroke:' + 'hsl(' + ((min + max) / 2) + ',100%,50%';//,' + 100 / yearOffset + '%);';
         return style;
     }

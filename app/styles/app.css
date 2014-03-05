@@ -38,16 +38,18 @@ svg.migration{
 	top:0;
 	left:0;
 	}
-#timeline_slider{
-	border: 1px dashed #EEEEEE;
-    bottom: 0;
+#timeline_slider {
+    border: 1px solid #000;
+    bottom: 10px;
     height: 50px;
     left: 50%;
     margin-left: -200px;
     position: fixed;
     width: 400px;
     z-index: 999;
-	}
+    background-color: #F8F8FF;
+    border-radius: 10px;
+    }
 	.rail{
 		width:100%;
 		height:4px;
@@ -71,15 +73,38 @@ svg.migration{
         fill: #0D577A;
         font-weight: bold;
     }
-	.handle{
-		background-color: #BC0000;
-		border: 3px solid #CCCCCC;
-		border-radius: 76px 76px 76px 76px;
-		box-shadow: 0 0 2px #444444;
-		height: 10px;
-		left: 0;
-		position: absolute;
-		top: -6px;
-		width: 1px;
-        z-index:99;
-		}
+    .handle {
+        background-color: #BC0000;
+        border: 7px solid #F80B0B;
+        border-radius: 76px 76px 0 0;
+        box-shadow: 0 0 2px #444;
+        height: 8px;
+        left: 0;
+        position: absolute;
+        top: -23px;
+        width: 1px;
+        z-index: 99;
+        }
+    .fixed-header {
+        margin: 0;
+        position: fixed;
+        left: 50%;
+        width: 300px;
+        line-height: 32px;
+        background: #F5F5DC;
+        overflow: hidden;
+        margin-left: -150px;
+        color: #B8860B;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid #A52A2A;
+        font-family: arial;
+        font-size: 16px;
+        }
+    path{
+        stroke-width: 3px;
+        fill:none;
+        fill: none;
+        shape-rendering: auto;
+        stroke-linecap: round;
+        }
