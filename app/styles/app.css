@@ -56,6 +56,15 @@ svg.migration{
 		position:absolute;
 		top:50%;
 		}
+    .marking {
+        font-size: 10px;
+        font-family: arial;
+        text-align: left;
+        position: relative;
+        top: 3px;
+        border-left: 1px solid #000;
+        box-sizing: border-box;
+    }
 	.handle{
 		background-color: #BC0000;
 		border: 3px solid #CCCCCC;
@@ -66,4 +75,5 @@ svg.migration{
 		position: absolute;
 		top: -6px;
 		width: 1px;
+        z-index:99;
 		}

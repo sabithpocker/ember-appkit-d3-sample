@@ -7,7 +7,7 @@ export default Ember.ArrayController.extend({
     timeline : Em.Object.create({
         startYear : 1940,
         endYear : 1950,
-        divisions : 0
+        divisions : 10
     }),
     countries: Ember.computed.alias('controllers.countries'),
     activeGroups : function () {

@@ -2,5 +2,8 @@
     <div class="rail">
         <div class="handle" {{bindAttr style="handleStyle"}}>
         </div>
+        {{#each years}}
+            <span class="marking" {{bind-attr style=controller.markingWidth}}>{{this}}</span>
+        {{/each}}
     </div>
 </div>

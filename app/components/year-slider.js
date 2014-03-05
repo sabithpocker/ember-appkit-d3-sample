@@ -12,6 +12,10 @@ export default Ember.Component.extend({
         return d3.range(this.get('timeline.startYear'), this.get('timeline.endYear'));
     }.property(),
     
+    markingWidth : function(){
+        var length = this.get('years').length;
+        return "width:" + (100/length) + "%;display:block;float:left;";
+    }.property(),
     handleActive : false,
     handleDistance : 0,
     handleOffset : 0,

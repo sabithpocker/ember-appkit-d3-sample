@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         var yearOffset = this.get('yearsPassed') + 2;
         var style = "";
         style += 'fill:none;stroke-width:1px;shape-rendering:auto;';
-        style += 'stroke:' + 'hsl(' + ((min + max) / 2) + ',100%,' + 100 / yearOffset + '%);';
+        style += 'stroke:' + 'hsl(' + ((min + max) / 2) + ',100%,50%';//,' + 100 / yearOffset + '%);';
         return style;
     }
     .property(),
