@@ -14,6 +14,11 @@ The example **does not** use `d3` to render the `svg`, instead it is *using `d3`
 
 *__courtesy__ : The whole project was started after reading an [article](http://corner.squareup.com/2012/04/building-analytics.html) by [Allen Cheung](http://twitter.com/allenmhc).*
 
+### Demo
+
+See live demo at [my website](http://markupmonks.com/migration/) 
+*The demo might not be updated*
+
 ### The Approach used
 
 The template for the `svg` looks like this in the `handlebars`
